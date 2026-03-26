@@ -1,6 +1,6 @@
 ---
 title: Pizza
-layout: default
+layout: content
 ---
 Original recipe: https://www.cookwell.com/recipe/weeknight-pan-pizza#recipe-video-player-desktop
 

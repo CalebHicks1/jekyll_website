@@ -1,6 +1,6 @@
 ---
 title: Sourdough
-layout: default
+layout: content
 ---
 
 original recipe: https://www.youtube.com/watch?v=dtWFkODWxBg
