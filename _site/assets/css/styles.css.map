@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../../_sass/main.scss"],"names":[],"mappings":"AAAA;EACI;;;AAGJ;EACI;EACA;;;AAIJ;EACI","sourcesContent":[".current {\n    color: green;\n}\n\nbody {\n    background-color: rgb(15, 15, 15);\n    color: rgb(250, 245, 242);\n    // color: cornsilk;\n}\n\na {\n    color: chartreuse;\n}"],"file":"styles.css"}
