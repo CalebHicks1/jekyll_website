@@ -3,7 +3,7 @@ title: Sourdough
 layout: default
 ---
 
-https://www.youtube.com/watch?v=dtWFkODWxBg
+original recipe: https://www.youtube.com/watch?v=dtWFkODWxBg
 
 Feed the starter the morning before you plan to make bread. That night, make the leaven. The bread will take about 5 hours to make once you mix the dough
 
