@@ -1,6 +1,4 @@
 - name: Home
   link: /
-- name: Pizza
-  link: /pizza.html
-- name: Sourdough
-  link: /sourdough.html
+- name: Recipes
+  link: /recipes.html
