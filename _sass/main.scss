@@ -10,6 +10,7 @@
     --bg-color: rgb(31, 47, 39);
     --fg-color: rgb(224, 237, 210);
     --selected-link-color: chartreuse;
+    --link-color: green;
 }
 
 
@@ -17,16 +18,9 @@
     color: var(--selected-link-color);
 }
 
-body {
-    background-color: var(--bg-color);
-    color: var(--fg-color);
-    // color: cornsilk;
-
-
-}
 
 a {
-    color: green;
+    color: var(--link-color);
 }
 
 html {
@@ -35,11 +29,14 @@ html {
 }
 
 body {
+    background-color: var(--bg-color);
+    color: var(--fg-color);
     display: table-cell;
     vertical-align: middle;
     padding-left: 50px;
     padding-right: 50px;
-    max-width: 900px;
+    // max-width: 900px;
+    width: 1000px;
 }
 
 h1 {
