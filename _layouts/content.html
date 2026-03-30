@@ -9,15 +9,15 @@
 </head>
 
 <body>
-    <h1 style="padding-left:20px;">{{ page.title }}</h1>
+    <h1 style="padding-left:10px;">{{ page.title }}</h1>
     <hr>
     <div style="width: 100%; display:flex;">
         <!-- left column -->
-        <div style="flex:10%; padding-left:10px;">
+        <div style="flex:25%; padding-left:10px;">
             {% include navigation_vertical.html %}
         </div>
         <!-- right column -->
-        <div style="flex:90%; padding-left:30px; padding-right:10px;">
+        <div style="flex:75%; padding-left:10px; padding-right:10px;">
             {{ content }}
         </div>
     </div>
