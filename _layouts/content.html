@@ -9,8 +9,19 @@
 </head>
 
 <body>
-    {% include navigation.html %}
-    {{ content }}
+    <h1 style="padding-left:20px;">{{ page.title }}</h1>
+    <hr>
+    <div style="width: 100%; display:flex;">
+        <!-- left column -->
+        <div style="flex:10%; padding-left:20px;">
+            {% include navigation_vertical.html %}
+        </div>
+        <!-- right column -->
+        <div style="flex:90%; padding-left:20px; padding-right:20px;">
+            {{ content }}
+        </div>
+    </div>
+
 </body>
 
 </html>
