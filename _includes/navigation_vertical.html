@@ -1,8 +1,28 @@
-<nav style="margin-top:16px">
+<ul style="padding-inline-start: 0px;">
     {% for item in site.data.navigation %}
-    <a href="{{ item.link }}" {% if page.url==item.link %} class="current" {% endif %}>
-        {{ item.name }}
-    </a>
-    <br>
+    <li>
+
+        <a href="{{ item.link }}" {% if page.url==item.link %} class="current" {% endif %}>
+            {{ item.name }}
+        </a>
+    </li>
     {% endfor %}
-</nav>
+
+    {% for collection in site.collections %}
+    <li>
+
+        {{ collection.label | capitalize }}
+        <ul style="padding-inline-start: 10px;">
+
+            {% for item in collection.docs %}
+            <li>
+
+                <a href="{{ item.url }}" {% if page.url==item.url %} class="current" {% endif %}>
+                    {{ item.title }}
+                </a>
+            </li>
+            {% endfor %}
+    </li>
+</ul>
+{% endfor %}
+</ul>
