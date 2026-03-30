@@ -8,7 +8,9 @@
     </li>
     {% endfor %}
 
-    {% for collection in site.collections %}
+    <!-- filter out the posts collection -->
+    {% assign collections = site.collections | where_exp: "collection", "collection.label != 'posts'" %}
+    {% for collection in collections %}
     <li>
 
         {{ collection.label | capitalize }}
