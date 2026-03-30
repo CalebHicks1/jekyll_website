@@ -1,4 +1,4 @@
-<ul style="padding-inline-start: 0px;">
+<ul style="position:sticky; top:20px;list-style-type: none; padding-inline-start: 0px;">
     {% for item in site.data.navigation %}
     <li>
 
@@ -14,7 +14,7 @@
     <li>
 
         {{ collection.label | capitalize }}
-        <ul style="padding-inline-start: 10px;">
+        <ul style="list-style-type: none; padding-inline-start: 10px;">
 
             {% for item in collection.docs %}
             <li>

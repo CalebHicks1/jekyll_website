@@ -5,6 +5,13 @@
     /* url of the font */
 }
 
+@font-face {
+    font-family: Montserrat;
+    /* set name */
+    src: url(/assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+    /* url of the font */
+}
+
 // colors
 :root {
     --bg-color: rgb(31, 47, 39);
@@ -37,8 +44,9 @@ body {
     padding-right: 50px;
     // max-width: 900px;
     width: 1000px;
+    font-family: Montserrat;
 }
 
-h1 {
-    font-family: Bungee;
-}
+// h1 {
+//     font-family: Bungee;
+// }
