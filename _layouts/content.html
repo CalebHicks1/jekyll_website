@@ -10,15 +10,16 @@
 
 <body>
     <h1 style="padding-left:10px;">{{ page.title }}</h1>
-    <hr>
-    <div style="width: 100%; display:flex;">
-        <!-- left column -->
-        <div style="flex:25%; padding-left:10px;">
-            {% include navigation_vertical.html %}
+    <div style="width: 100%; display:flex; ">
+        <!-- left column holds page content -->
+        <div
+            style="flex:75%; padding-left:10px; padding-right:10px; border:solid; border-radius: 10px; border-width: 1; border-color: var(--faded-color);">
+            {{ content }}
         </div>
         <!-- right column -->
-        <div style="flex:75%; padding-left:10px; padding-right:10px;">
-            {{ content }}
+        <div style="flex:25%; padding-left:10px;">
+
+            {% include navigation_vertical.html %}
         </div>
     </div>
 

@@ -1,4 +1,4 @@
-<ul style="position:sticky; top:20px;list-style-type: none; padding-inline-start: 0px;">
+<div style="position:sticky; top:20px;list-style-type: none; padding-inline-start: 0px; text-align: center;">
     {% for item in site.data.navigation %}
     <li>
 
@@ -13,18 +13,20 @@
     {% for collection in collections %}
     <li>
 
-        {{ collection.label | capitalize }}
-        <ul style=" padding-inline-start: 20px;">
+        <h3 style="margin-bottom: 0;">
+            {{ collection.label | capitalize }}
+        </h3>
+        <hr style="color:var(--fg-color); width:80%">
+        <ul style=" padding-inline-start: 10px;">
 
             {% for item in collection.docs %}
-            <li>
 
-                <a href="{{ item.url }}" {% if page.url==item.url %} class="current" {% endif %}>
-                    {{ item.title }}
-                </a>
-            </li>
+            <a href="{{ item.url }}" {% if page.url==item.url %} class="current" {% endif %}>
+                {{ item.title }}
+            </a>
+            <br>
             {% endfor %}
     </li>
-</ul>
-{% endfor %}
-</ul>
+    </ul>
+    {% endfor %}
+</div>
