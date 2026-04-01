@@ -17,13 +17,15 @@
     --bg-color: rgb(46, 52, 50);
     --fg-color: rgb(191, 225, 155);
     --faded-color: rgb(54, 64, 59);
-    --selected-link-color: rgb(240, 91, 22);
-    --link-color: rgb(240, 133, 83);
+    --selected-link-color: rgb(19, 110, 247);
+    --link-color: rgb(73, 125, 202);
 }
 
 
 .current {
-    color: var(--selected-link-color);
+    color: var(--bg-color);
+    background-color: var(--link-color);
+    text-decoration: none;
 }
 
 

@@ -17,14 +17,15 @@
             {{ collection.label | capitalize }}
         </h3>
         <hr style="color:var(--fg-color); width:80%">
-        <ul style=" padding-inline-start: 10px;">
+        <ul style=" padding-inline-start: 10px; list-style-type:none;">
 
             {% for item in collection.docs %}
+            <li style="margin-top:8px">
 
-            <a href="{{ item.url }}" {% if page.url==item.url %} class="current" {% endif %}>
-                {{ item.title }}
-            </a>
-            <br>
+                <a href="{{ item.url }}" {% if page.url==item.url %} class="current" {% endif %}">
+                    {{ item.title }}
+                </a>
+            </li>
             {% endfor %}
     </li>
     </ul>
