@@ -6,18 +6,35 @@
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="icon" href="/assets/images/hat.ico" type="image/x-icon">
+    <script>
+        // function to hide the nav panel on button click
+        function toggleSidePanel() {
+            var panel = document.getElementById('sidePanel');
+            panel.classList.toggle("hidden")
+        }
+    </script>
 </head>
 
 <body>
-    <h1 style="padding-left:10px;">{{ page.title }}</h1>
-    <div style="width: 100%; display:flex; ">
+    <div style="width: 100%; display:flex;">
+        <!-- left column holds page content -->
+        <div style="flex:75%; padding-left:10px; padding-right:10px;">
+            <h1>{{ page.title }}</h1>
+        </div>
+        <!-- right column -->
+        <div style="display:flex;flex:25%; padding-left:10px; align-items:center;justify-content: center;">
+
+            <button onclick="toggleSidePanel()" style="width:50%">nav</button>
+        </div>
+    </div>
+    <div style="width: 100%; display:flex;">
         <!-- left column holds page content -->
         <div
             style="flex:75%; padding-left:10px; padding-right:10px; border:solid; border-radius: 10px; border-width: 1; border-color: var(--faded-color);">
             {{ content }}
         </div>
         <!-- right column -->
-        <div style="flex:25%; padding-left:10px;">
+        <div id="sidePanel" style="flex:25%; padding-left:10px;">
 
             {% include navigation_vertical.html %}
         </div>
