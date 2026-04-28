@@ -1,4 +1,4 @@
-<div style="position:sticky; top:20px;list-style-type: none; padding-inline-start: 0px; text-align: center;">
+<div style="position:sticky; top:20px;list-style-type: none; padding-inline-start: 0px; text-align: left;">
     {% for item in site.data.navigation %}
     <li>
 
@@ -16,7 +16,7 @@
         <h3 style="margin-bottom: 0;">
             {{ collection.label | capitalize }}
         </h3>
-        <hr style="color:var(--fg-color); width:80%">
+        <!--<hr style="color:var(--fg-color); width:80%">-->
         <ul style=" padding-inline-start: 10px; list-style-type:none;">
 
             {% for item in collection.docs %}
