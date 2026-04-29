@@ -2,8 +2,6 @@
 title: Resume
 layout: content
 ---
-Versatile Data Engineer with a strong track record of translating ambiguous client requirements into actionable solutions. Skilled in building scalable ETL pipelines, integrating APIs, and solving complex data challenges.
-
 ## Experience
 ***
 ### Diliko.ai
