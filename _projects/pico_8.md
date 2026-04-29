@@ -9,6 +9,6 @@ I've always wanted to make a video game, but as a beginner I didn't know where t
 This is my first PICO-8 project. My favorite part of this project was tweaking the particle system to create a convincing fire effect. You can play it [here](https://www.lexaloffle.com/bbs/?pid=187946#p).
 
 <div style="display: flex; justify-content:center;">
-    <img src="../assets/images/homunculus.gif" style="max-width: 400px; margin-left:auto; margin-right:auto; padding-top: 20px;">
+    <img src="../assets/images/homunculus.gif" style="width: 70%; margin-left:auto; margin-right:auto; padding-top: 20px;">
 </div>
 <!-- <iframe class="pico-embed" src="https://www.lexaloffle.com/bbs/widget.php?pid=homunculus_run" allowfullscreen style="border:none; overflow:hidden"></iframe> -->
