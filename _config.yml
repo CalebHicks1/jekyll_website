@@ -3,3 +3,5 @@ collections:
     output: true
   projects:
     output: true
+  contact:
+    output: true
