@@ -10,21 +10,25 @@
 
     <!-- filter out the posts collection -->
     {% assign collections = site.collections | where_exp: "collection", "collection.label != 'posts'" %}
+    <!-- Generate links for each element of every collection -->
     {% for collection in collections %}
     <li>
-
         <h3 style="margin-bottom: 0;">
             {{ collection.label | capitalize }}
         </h3>
-        <!--<hr style="color:var(--fg-color); width:80%">-->
         <ul style=" padding-inline-start: 10px; list-style-type:none;">
-
             {% for item in collection.docs %}
             <li style="margin-top:8px">
-
-                <a href="{{ item.url }}" {% if page.url==item.url %} class="current" {% endif %}">
-                    {{ item.title }}
-                </a>
+                <!-- if the page has type:link in the frontmatter, then link to the url in its content instead of to the page itself. -->
+                {% if item.type == "link" %}
+                    <a href="{{ item.content }}" {% if page.url==item.content %} class="current" {% endif %}">
+                        {{ item.title }}
+                    </a>
+                {% else %}
+                    <a href="{{ item.url }}" {% if page.url==item.url %} class="current" {% endif %}">
+                        {{ item.title }}
+                    </a>
+                {% endif %}
             </li>
             {% endfor %}
     </li>
