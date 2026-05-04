@@ -21,7 +21,12 @@
     <div style="width: 100%; display:flex;">
         <!-- left column holds page content -->
         <div style="flex:75%; padding-left:10px; padding-right:10px;">
-            <h1>{{ page.title }}</h1>
+            <h1 style="width:fit-content; display:inline-block;">{{ page.title }}</h1>
+            {% if page.url != "/" %}
+                <a href="/">
+                    Home⤴
+                </a>
+            {% endif %}
         </div>
         <!-- right column -->
         <div style="display:flex;flex:25%; padding-left:10px; align-items:left;justify-content: left;">
