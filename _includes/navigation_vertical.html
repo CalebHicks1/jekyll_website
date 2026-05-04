@@ -21,7 +21,7 @@
             <li style="margin-top:8px">
                 <!-- if the page has type:link in the frontmatter, then link to the url in its content instead of to the page itself. -->
                 {% if item.type == "link" %}
-                    <a href="{{ item.content }}" {% if page.url==item.content %} class="current" {% endif %}">
+                    <a target="_blank" href="{{ item.content }}" {% if page.url==item.content %} class="current" {% endif %}">
                         {{ item.title }}
                     </a>
                 {% else %}
