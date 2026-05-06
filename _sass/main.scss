@@ -43,7 +43,7 @@ hr {
     display: none;
 }
 
-.current {
+.current, a:hover {
     color: var(--bg-color);
     background-color: var(--link-color);
     text-decoration: none;
@@ -54,6 +54,7 @@ hr {
 a {
     color: var(--link-color);
 }
+
 
 html {
     display: table;
