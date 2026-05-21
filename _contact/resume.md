@@ -2,11 +2,6 @@
 title: Resume
 layout: content
 ---
-# Caleb Hicks
-[linkedin.com/in/calebhicks-42](linkedin.com/in/calebhicks-42) · [github.com/caleb-hicks](github.com/caleb-hicks)
-
-***
-
 ## Experience
 ### Diliko.ai · Remote
 
