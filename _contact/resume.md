@@ -3,7 +3,7 @@ title: Resume
 layout: content
 ---
 # Caleb Hicks
-[calebhicks1@gmail.com](calebhicks1@gmail.com) · [linkedin.com/in/calebhicks-42](linkedin.com/in/calebhicks-42) · [github.com/caleb-hicks](github.com/caleb-hicks)
+[linkedin.com/in/calebhicks-42](linkedin.com/in/calebhicks-42) · [github.com/caleb-hicks](github.com/caleb-hicks)
 
 ***
 
